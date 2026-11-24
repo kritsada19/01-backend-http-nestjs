@@ -20,6 +20,7 @@ export class ShippingService {
     return firstKgFee + extraKg * 18;
   }
 
+  // ราคาแต่ละพื้นที่
   zoneFee(zone: string): number {
     switch (zone.toLowerCase()) {
       case 'bangkok':

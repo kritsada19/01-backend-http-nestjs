@@ -15,6 +15,7 @@ export class FineService {
   private readonly graceDays = 3;
   private readonly maxFine = 500;
 
+  // เรตราคาหนังสือละประเภท
   private getRate(type: string): number {
     switch (type.toLowerCase()) {
       case 'general':
